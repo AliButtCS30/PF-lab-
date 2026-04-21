@@ -14,7 +14,7 @@ int main()
         {cout<<"Too many attempts. Card Blocked"<<endl;}
          }
          int balance = 1000, deposit, withdraw;
-         for(int i=1; i<=20; i++){
+         while(true){
     cout<<"--------Main Menu--------"<<endl;
     cout<<" 1. Check Balance"<<endl;
     cout<<" 2. Deposit Money"<<endl;
@@ -40,7 +40,8 @@ else{cout<<"Transaction successfull Your new balance is" <<balance - withdraw<<e
 }
 balance = balance - withdraw ;}
 
-else if(choice==4){cout<<"Thank you for using ATM"<<endl;}
+else if(choice==4){cout<<"Thank you for using ATM"<<endl;break;}
+else{cout<<"Invalid choice. Prgram ended. "; break;}
 }
 
 }
